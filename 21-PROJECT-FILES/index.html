@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon site web "Budget simplifié"</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <script src="day21.js" defer></script>
+  <div class="wrapper">
+    <div class="add-panel">
+      <h1>Budget simplifié</h1>
+      <div class="field">
+        <input type="number" name="income" id="income" />
+        <label for="income">Montant budgétaire</label>
+      </div>
+      <div class="add-expense">
+        <div class="field">
+          <input type="text" name="expense-name" id="expense-name" />
+          <label for="expense-name">Frais</label>
+        </div>
+        <div class="field">
+          <input type="number" name="expense-amount" id="expense-amount" />
+          <label for="expense-amount">Montant</label>
+        </div>
+        <button name="add-expense-button" id="add-expense-button" class="add-expense-button">
+          <img src="./images/plus.svg" alt="Plus" />
+        </button>
+      </div>
+    </div>
+
+    <div class="expenses-panel">
+      <h2>Frais</h2>
+      </div>
+    </div>
+
+    <div class="summary-panel">
+      <div class="summary-item">
+        <div class="summary-label">Revenu</div>
+        <div class="summary-amount" id="income-amount"></div>
+      </div>
+
+      <div class="summary-item">
+        <div class="summary-label">Montant</div>
+        <div class="summary-amount" id="expense-amount-display"></div>
+      </div>
+
+      <div class="summary-item">
+        <div class="summary-label">Reste</div>
+        <div class="summary-amount" id="balance-amount"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
